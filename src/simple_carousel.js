@@ -6,7 +6,7 @@ $(function() {
     // TODO: dom select 최적화하기 (height구하는부분?)
     var $slider = $("section.slider");
     var $viewport = $slider.children(".viewport");
-    var $images = $viewport.children();
+    var $images = $viewport.children(".img");
 
     var screenWidth = $slider.width();
 
