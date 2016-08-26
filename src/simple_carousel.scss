@@ -1,0 +1,23 @@
+.simple-slider {
+    position: relative;
+    overflow: hidden;
+    &.end {
+        transition: height 0.3s cubic-bezier(0, 0, 0, 1);
+
+        >.viewport { transition: transform 0.3s cubic-bezier(0, 0, 0, 1) }
+    }
+
+    >.viewport{
+        position: absolute;
+        white-space: nowrap;
+        font-size: 0;
+        width: 100%;
+
+        >.img {
+            width: 100vw;
+            vertical-align: top;
+            object-position:50%;
+            object-fit: cover;
+        }
+    }
+}
