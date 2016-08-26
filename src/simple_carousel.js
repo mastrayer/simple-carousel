@@ -32,8 +32,8 @@ $(function() {
             $viewport.css('transform', 'translateX('+(startSlidePosition + moved)+'px)');
 
             var newIndex = -Number.parseInt($viewport.css('transform').split(',')[4]) / screenWidth;
-            if(direction == 1) index = Math.floor(newIndex + 0.5);
-            else               index = Math.ceil(newIndex - 0.5);
+            if(direction == 1) index = Math.floor(newIndex);
+            else               index = Math.ceil(newIndex);
 
             var currentHeight = $images.eq(index).height();
             var nextHeight = $images.eq(index + direction).height();
